@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F6AF"
+    tools:context=".Mainmain">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="400dp"
+        android:gravity="center_horizontal"
+        android:text="Tic Tac Toe"
+        android:textAlignment="center"
+        android:textColor="#024A44"
+        android:textSize="50sp"
+        app:fontFamily="@font/almendra_bold_italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.331" />
+
+    <TextView
+        android:id="@+id/button4"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:background="#D3EFB3"
+        android:bottomLeftRadius="30dp"
+        android:bottomRightRadius="30dp"
+        android:gravity="center_vertical"
+        android:onClick="online"
+        android:shadowRadius="70"
+        android:text="ONLINE"
+        android:textAlignment="center"
+        android:textColor="#024A44"
+        android:textSize="22sp"
+        android:topLeftRadius="30dp"
+        android:topRightRadius="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/button"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="80dp"
+        android:background="#D3EFB3"
+        android:bottomLeftRadius="30dp"
+        android:bottomRightRadius="30dp"
+        android:gravity="center_vertical"
+        android:onClick="newgame"
+        android:shadowRadius="70"
+        android:text="NEW GAME"
+        android:textAlignment="center"
+        android:textColor="#024A44"
+        android:textSize="22sp"
+        android:topLeftRadius="30dp"
+        android:topRightRadius="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/button2"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginEnd="81dp"
+        android:background="#D3EFB3"
+        android:gravity="center_vertical"
+
+        android:shadowRadius="70"
+
+        android:text="SOUND"
+        android:textAlignment="center"
+        android:textColor="#024A44"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.617"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/button3"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:background="#D3EFB3"
+        android:bottomLeftRadius="30dp"
+        android:bottomRightRadius="30dp"
+        android:gravity="center_vertical"
+        android:onClick="exit"
+        android:shadowRadius="70"
+        android:text="EXIT"
+        android:textAlignment="center"
+        android:textColor="#024A44"
+        android:textSize="22sp"
+        android:topLeftRadius="30dp"
+        android:topRightRadius="30dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4"
+        tools:ignore="RtlCompat" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="633dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
