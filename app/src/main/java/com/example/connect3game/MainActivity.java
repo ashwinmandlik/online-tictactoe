@@ -2,7 +2,6 @@ package com.example.connect3game;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
-
 import android.content.Context;
 import android.content.Intent;
 import android.media.MediaPlayer;
@@ -151,7 +150,7 @@ public class MainActivity extends AppCompatActivity {
             isgameover = true;
 
         } else if (occupied[2] == occupied[5] && occupied[5] == occupied[8] && occupied[8] == 1) {
-
+            showToastCenter("o won");
             isgameover = true;
 
         } else if (occupied[0] == occupied[4] && occupied[4] == occupied[8] && occupied[8] == 1) {

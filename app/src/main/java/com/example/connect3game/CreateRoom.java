@@ -12,6 +12,7 @@ public class CreateRoom extends AppCompatActivity {
 
     String newRoom;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,11 +38,13 @@ public class CreateRoom extends AppCompatActivity {
                     @Override
                     public void startActivity() {
                         Intent intent=new Intent(getApplicationContext(), PlayAfterjoinandcreate.class);
+                        intent.putExtra("activeplaya",true);
+                        intent.putExtra("room_name",room_name);
                         CreateRoom.this.startActivity(intent);
                     }
 
 
-                });
+                },roomNameEditText.getText().toString());
             }
         });
 

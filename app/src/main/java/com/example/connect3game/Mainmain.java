@@ -14,7 +14,6 @@ public class Mainmain extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mainmain);
 
-
     }
 
     public void newgame(View view){
