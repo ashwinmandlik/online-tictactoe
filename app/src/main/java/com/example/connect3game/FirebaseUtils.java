@@ -18,14 +18,7 @@ class IsItMyTurn{
     void whoseturn(final Ismyturn ismyturn,String roomname){
 
         final FirebaseFirestore db = FirebaseFirestore.getInstance();
-//        db.collection("rooms")
-//                .document(roomname)
-//                .set(isOsturn).addOnSuccessListener(new OnSuccessListener<Void>() {
-//            @Override
-//            public void onSuccess(Void aVoid) {
-//                Log.i("working", "onSuccess: ");
-//            }
-//        });
+
     }
 }
 
@@ -98,7 +91,7 @@ class CreateRoomandUploadtoDB {
                      callback.startActivity();
                  }
          });
-         Log.i("madarchod", "UploadRoomNameToDb: "+ roomname);
+         Log.i("testing", "UploadRoomNameToDb: "+ roomname);
          return "roomname";
      }
 

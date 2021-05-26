@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
 
 
             if (activeplayer == 0) {
-                Log.i(" check", "game over");
+                //Log.i(" check", "game over");
                 counter.setImageResource(R.drawable.cancel);
                 counter.animate().translationYBy(1500).setDuration(1000);
                 Button vibrateButton = new Button(this);
@@ -132,7 +132,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void winningcondition() {
         if (occupied[0] == occupied[1] && occupied[1] == occupied[2] && occupied[2] == 1) {
-            showToastCenter("o won");
+//            showToastCenter("o won");
+            Toast.makeText(this, "O won", Toast.LENGTH_SHORT).show();
             isgameover = true;
 
         } else if (occupied[3] == occupied[4] && occupied[4] == occupied[5] && occupied[5] == 1) {
@@ -164,6 +165,7 @@ public class MainActivity extends AppCompatActivity {
         } else if (occupied[0] == occupied[1] && occupied[1] == occupied[2] && occupied[2] == 0) {
             showToastCenter("x won");
             isgameover = true;
+
         } else if (occupied[3] == occupied[4] && occupied[4] == occupied[5] && occupied[5] == 0) {
             showToastCenter("x won");
             isgameover = true;
@@ -198,7 +200,6 @@ public class MainActivity extends AppCompatActivity {
     void showToastCenter(String s) {
         Toast t = Toast.makeText(getApplicationContext(), s, Toast.LENGTH_SHORT);
         t.setGravity(Gravity.CENTER, 0, 0);
-
         t.show();
     }
 

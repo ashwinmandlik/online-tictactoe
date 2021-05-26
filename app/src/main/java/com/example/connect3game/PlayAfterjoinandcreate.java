@@ -42,13 +42,6 @@ public class PlayAfterjoinandcreate extends AppCompatActivity {
     String roomname;
     private ListenerRegistration notelistner;
 
-//    public void getactivee(final GetActivePlayer getactivePlayer){
-//        Bundle activep= getactivePlayer.getActive();
-//        ap=activep.getString("nowActivePlayer");
-//
-//        Log.i("i", ap); //y is x ie.activeplayer is x.
-//
-//    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

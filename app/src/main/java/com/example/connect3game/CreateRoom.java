@@ -43,7 +43,6 @@ public class CreateRoom extends AppCompatActivity {
                         CreateRoom.this.startActivity(intent);
                     }
 
-
                 },roomNameEditText.getText().toString());
             }
         });
