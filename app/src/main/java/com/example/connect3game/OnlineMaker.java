@@ -18,6 +18,7 @@ public class OnlineMaker extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(),JoinRoom.class);
         startActivity(intent);
     }
+
     public void  createroom(View view){
         Intent intent = new Intent(getApplicationContext(),CreateRoom.class);
         startActivity(intent);
